@@ -1362,6 +1362,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.\!tw-bg-\[\#fb6058\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(251 96 88 / var(--tw-bg-opacity, 1)) !important;
+}
+
 .tw-object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1921,6 +1926,25 @@ video {
 .dark\:tw-bg-black:is(.tw-dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:tw-bg-\[\#570100\]:is(.tw-dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 1 0 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:tw-bg-\[\#6b0100\]:is(.tw-dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 1 0 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:tw-bg-\[\#\#fb6058\]:is(.tw-dark *) {
+  background-color: ##fb6058;
+}
+
+.dark\:tw-bg-\[\#fb6058\]:is(.tw-dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 96 88 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:\!tw-text-white:is(.tw-dark *) {

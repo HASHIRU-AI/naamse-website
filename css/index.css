@@ -138,7 +138,7 @@ hr{
 
 .hero-bg-gradient{
     /* background: linear-gradient(180deg, var(--hero-gradient) 13%, rgba(0,0,0,0.258140756302521) 87%); */
-    background: linear-gradient(180deg, var(--hero-gradient) 23%, rgba(0,0,0,0) 87%, var(--hero-gradient) 97%);
+    background: linear-gradient(180deg, var(--hero-gradient) 23%, rgba(251, 96, 88) 87%, var(--hero-gradient) 97%);
 }
 
 
@@ -151,8 +151,8 @@ hr{
 
 
 .purple-bg-grad{
-    background: rgb(126,34,206);
-    background: linear-gradient(90deg, #7e22ce91 8%, #625aafae 31%, #7badbbbc 76%, #54d2d0ca 89%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, #ffffff91 8%, #ffd4ceae 31%, #ffb3a5bc 76%, #fb6058ca 89%);
     filter: blur(50px);
     opacity: 0.5;
 }
