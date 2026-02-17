@@ -180,8 +180,8 @@ const videoBg = document.querySelector("#video-container-bg")
 const videoContainer = document.querySelector("#video-container")
 
 function openVideo(){
-    videoBg.classList.remove("tw-scale-0", "tw-opacity-0")
-    videoBg.classList.add("tw-scale-100", "tw-opacity-100")
+    videoBg.classList.remove("tw-scale-0", "tw-opacity-0", "tw-pointer-events-none")
+    videoBg.classList.add("tw-scale-100", "tw-opacity-100", "tw-pointer-events-auto")
     videoContainer.classList.remove("tw-scale-0")
     videoContainer.classList.add("tw-scale-100")
 
@@ -193,8 +193,8 @@ function closeVideo(){
     videoContainer.classList.remove("tw-scale-100")
 
     setTimeout(() => {
-        videoBg.classList.remove("tw-scale-100", "tw-opacity-100")
-        videoBg.classList.add("tw-scale-0", "tw-opacity-0")
+        videoBg.classList.remove("tw-scale-100", "tw-opacity-100", "tw-pointer-events-auto")
+        videoBg.classList.add("tw-scale-0", "tw-opacity-0", "tw-pointer-events-none")
     }, 400)
    
 

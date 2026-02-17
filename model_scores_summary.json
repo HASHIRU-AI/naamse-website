@@ -1,0 +1,207 @@
+{
+  "total_models": 16,
+  "models": [
+    {
+      "model": "glm4.7",
+      "reports": [
+        {
+          "seed": "5306016632",
+          "type": "separate",
+          "adversarial_file": "final_report_adversarial_glm4.7_seed5306016632.json",
+          "adversarial_score": 47.49,
+          "benign_file": "final_report_benign_glm4.7_seed5306016632.json",
+          "benign_score": 14.33
+        }
+      ]
+    },
+    {
+      "model": "gpt-oss-120b",
+      "reports": [
+        {
+          "seed": null,
+          "type": "separate",
+          "adversarial_file": "final_report_adversarial_gptoss-120b.json",
+          "adversarial_score": 56.73,
+          "benign_file": "final_report_benign_gptoss-120b.json",
+          "benign_score": 51.94
+        }
+      ]
+    },
+    {
+      "model": "kimi-k2-instruct-0905",
+      "reports": [
+        {
+          "seed": "4547331533",
+          "type": "consolidated",
+          "file": "assessment_report_kimi_k2_instruct_0905_seed_4547331533.json",
+          "adversarial_score": 49.12,
+          "benign_score": 15.01
+        }
+      ]
+    },
+    {
+      "model": "llama-3.1-405b-instruct",
+      "reports": [
+        {
+          "seed": null,
+          "type": "separate",
+          "adversarial_file": "final_report_adversarial_llama-3.1-405b-instruct.json",
+          "adversarial_score": 73.64,
+          "benign_file": "final_report_benign_llama-3.1-405b-instruct.json",
+          "benign_score": 13.74
+        }
+      ]
+    },
+    {
+      "model": "llama-4-maverick-17b-128e-instruct",
+      "reports": [
+        {
+          "seed": "5306016632",
+          "type": "consolidated",
+          "file": "final_report_llama-4-maverick-17b-128e-instruct_seed_5306016632.json",
+          "adversarial_score": 7.22,
+          "benign_score": 74.49
+        },
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "final_report_llama-4-maverick-17b-128e-instruct_seed_75687.json",
+          "adversarial_score": 5.7,
+          "benign_score": 74.47
+        }
+      ]
+    },
+    {
+      "model": "llama-4-scout-17b-16e-instruct",
+      "reports": [
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "final_report_llama-4-scout-17b-16e-instruct_seed_75687.json",
+          "adversarial_score": 69.14,
+          "benign_score": 14.65
+        }
+      ]
+    },
+    {
+      "model": "llama3.2-3b",
+      "reports": [
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "assessment_report_llama3.2_3b_10itr_8mut_seed_75687.json",
+          "adversarial_score": 30.37,
+          "benign_score": 32.07
+        }
+      ]
+    },
+    {
+      "model": "mistral-7b",
+      "reports": [
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "assessment_report_mistral_7b_10itr_8mut_seed_75687.json",
+          "adversarial_score": 81.86,
+          "benign_score": 6.02
+        }
+      ]
+    },
+    {
+      "model": "mixtral-8x22b-instruct-v0.1",
+      "reports": [
+        {
+          "seed": "4547331533",
+          "type": "consolidated",
+          "file": "assessment_report_mixtral_8x22b_instruct_v0.1_seed_4547331533.json",
+          "adversarial_score": 68.04,
+          "benign_score": 19.71
+        }
+      ]
+    },
+    {
+      "model": "nemotron-3-nano-30b-a3b",
+      "reports": [
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "final_report_nemotron-3-nano-30b-a3b_seed_75687.json",
+          "adversarial_score": 57.52,
+          "benign_score": 20.59
+        }
+      ]
+    },
+    {
+      "model": "nvidia-nemotron-9b",
+      "reports": [
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "assessment_report_nemotron_9b_10itr_8mut_seed_75687.json",
+          "adversarial_score": 62.47,
+          "benign_score": 13.08
+        }
+      ]
+    },
+    {
+      "model": "phi-2",
+      "reports": [
+        {
+          "seed": null,
+          "type": "consolidated",
+          "file": "final_report_phi_75687.json",
+          "adversarial_score": 76.47,
+          "benign_score": 39.33
+        }
+      ]
+    },
+    {
+      "model": "phi4-mini",
+      "reports": [
+        {
+          "seed": "5306016632",
+          "type": "consolidated",
+          "file": "assessment_report_phi4_mini_seed_5306016632.json",
+          "adversarial_score": 44.54,
+          "benign_score": 24.01
+        }
+      ]
+    },
+    {
+      "model": "qwen3-4b",
+      "reports": [
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "assessment_report_qwen3_4b_10itr_8mut_seed_75687.json",
+          "adversarial_score": 55.18,
+          "benign_score": 28.5
+        }
+      ]
+    },
+    {
+      "model": "qwen3-coder-480b-a35b-instruct",
+      "reports": [
+        {
+          "seed": "75687",
+          "type": "consolidated",
+          "file": "final_report_qwen3-coder-480b-a35b-instruct_seed_75687.json",
+          "adversarial_score": 47.56,
+          "benign_score": 11.08
+        }
+      ]
+    },
+    {
+      "model": "sarvam-m",
+      "reports": [
+        {
+          "seed": "4547331533",
+          "type": "consolidated",
+          "file": "assessment_report_sarvam_m_seed_4547331533.json",
+          "adversarial_score": 52.87,
+          "benign_score": 28.91
+        }
+      ]
+    }
+  ]
+}
