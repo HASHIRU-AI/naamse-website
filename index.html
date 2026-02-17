@@ -286,12 +286,29 @@
                 <div class="purple-bg-grad reveal-up tw-absolute tw-right-[10%] tw-top-[10%] tw-h-[150px] tw-w-[150px]"></div>
                 
                 <h2 class="reveal-up tw-text-5xl tw-font-semibold max-md:tw-text-3xl tw-text-center">
-                    Model Security Leaderboard
+                    Leaderboard
                 </h2>
                 <p class="reveal-up tw-text-center tw-text-lg max-md:tw-text-base tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-[700px]">
                     Comprehensive evaluation of AI models showing adversarial and benign scores across different test configurations
                 </p>
-
+                <div class="reveal-up tw-mt-8 tw-flex tw-flex-wrap tw-gap-6 tw-place-content-center tw-text-sm">
+                    <div class="tw-flex tw-items-center tw-gap-2">
+                        <i class="bi bi-info-circle tw-text-gray-600 dark:tw-text-gray-400"></i>
+                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Hover over rows to see seed values</span>
+                    </div>
+                    <div class="tw-flex tw-items-center tw-gap-2">
+                        <div class="tw-w-4 tw-h-4 tw-rounded tw-bg-red-500"></div>
+                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Adversarial Score (Lower = More Secure)</span>
+                    </div>
+                    <div class="tw-flex tw-items-center tw-gap-2">
+                        <div class="tw-w-4 tw-h-4 tw-rounded tw-bg-green-500"></div>
+                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Benign Score (Lower = More Usable)</span>
+                    </div>
+                    <div class="tw-flex tw-items-center tw-gap-2">
+                        <div class="tw-w-4 tw-h-4 tw-rounded tw-bg-blue-500"></div>
+                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Average Score (Lower = Better Overall)</span>
+                    </div>
+                </div>
                 <div class="reveal-up tw-w-full tw-overflow-x-auto tw-mt-6">
                     <div class="tw-min-w-[750px]">
                         <table id="leaderboard-table" class="tw-w-full tw-border-collapse tw-bg-white dark:tw-bg-[#171717] tw-rounded-xl tw-overflow-hidden tw-shadow-xl">
@@ -311,24 +328,6 @@
                     </div>
                 </div>
 
-                <div class="reveal-up tw-mt-8 tw-flex tw-flex-wrap tw-gap-6 tw-place-content-center tw-text-sm">
-                    <div class="tw-flex tw-items-center tw-gap-2">
-                        <i class="bi bi-info-circle tw-text-gray-600 dark:tw-text-gray-400"></i>
-                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Hover over rows to see seed values</span>
-                    </div>
-                    <div class="tw-flex tw-items-center tw-gap-2">
-                        <div class="tw-w-4 tw-h-4 tw-rounded tw-bg-red-500"></div>
-                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Adversarial Score: Lower = More Secure</span>
-                    </div>
-                    <div class="tw-flex tw-items-center tw-gap-2">
-                        <div class="tw-w-4 tw-h-4 tw-rounded tw-bg-green-500"></div>
-                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Benign Score: Lower = Better</span>
-                    </div>
-                    <div class="tw-flex tw-items-center tw-gap-2">
-                        <div class="tw-w-4 tw-h-4 tw-rounded tw-bg-blue-500"></div>
-                        <span class="tw-text-gray-700 dark:tw-text-gray-300">Average Score: Sorted by this (Lower = Better Overall)</span>
-                    </div>
-                </div>
             </div>
         </section>
 
