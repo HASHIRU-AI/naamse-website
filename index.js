@@ -10,6 +10,10 @@ const collapseHeaderItems = document.getElementById("collapsed-header-items")
 const navToggle = document.querySelector("#nav-dropdown-toggle-0")
 const navDropdown = document.querySelector("#nav-dropdown-list-0")
 
+// Video elements
+const videoBg = document.querySelector("#video-container-bg")
+const videoContainer = document.querySelector("#video-container")
+
 
 function onHeaderClickOutside(e) {
 
@@ -176,10 +180,12 @@ function closeNavDropdown(event){
 }
 
 
-const videoBg = document.querySelector("#video-container-bg")
-const videoContainer = document.querySelector("#video-container")
-
 function openVideo(){
+    if (!videoBg || !videoContainer) {
+        console.error("Video elements not found", {videoBg, videoContainer})
+        return
+    }
+    
     videoBg.classList.remove("tw-scale-0", "tw-opacity-0", "tw-pointer-events-none")
     videoBg.classList.add("tw-scale-100", "tw-opacity-100", "tw-pointer-events-auto")
     videoContainer.classList.remove("tw-scale-0")
@@ -189,6 +195,11 @@ function openVideo(){
 }
 
 function closeVideo(){
+    if (!videoBg || !videoContainer) {
+        console.error("Video elements not found")
+        return
+    }
+    
     videoContainer.classList.add("tw-scale-0")
     videoContainer.classList.remove("tw-scale-100")
 
