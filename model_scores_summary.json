@@ -18,7 +18,7 @@
       "model": "gpt-oss-120b",
       "reports": [
         {
-          "seed": null,
+          "seed": "75687",
           "type": "separate",
           "adversarial_file": "final_report_adversarial_gptoss-120b.json",
           "adversarial_score": 56.73,
@@ -43,7 +43,7 @@
       "model": "llama-3.1-405b-instruct",
       "reports": [
         {
-          "seed": null,
+          "seed": "75687",
           "type": "separate",
           "adversarial_file": "final_report_adversarial_llama-3.1-405b-instruct.json",
           "adversarial_score": 73.64,
@@ -147,7 +147,7 @@
       "model": "phi-2",
       "reports": [
         {
-          "seed": null,
+          "seed": "75687",
           "type": "consolidated",
           "file": "final_report_phi_75687.json",
           "adversarial_score": 76.47,
