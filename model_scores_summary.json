@@ -1,8 +1,20 @@
 {
   "total_models": 16,
+  "providers": {
+    "Meta": "#0668E1",
+    "Microsoft": "#00A4EF",
+    "Mistral AI": "#FF7000",
+    "NVIDIA": "#76B900",
+    "Alibaba": "#FF6A00",
+    "OpenAI": "#10A37F",
+    "Z AI": "#6366F1",
+    "Moonshot AI": "#A855F7",
+    "Sarvam AI": "#EC4899"
+  },
   "models": [
     {
       "model": "glm4.7",
+      "provider": "Z AI",
       "reports": [
         {
           "seed": "5306016632",
@@ -16,6 +28,7 @@
     },
     {
       "model": "gpt-oss-120b",
+      "provider": "OpenAI",
       "reports": [
         {
           "seed": "75687",
@@ -29,6 +42,7 @@
     },
     {
       "model": "kimi-k2-instruct-0905",
+      "provider": "Moonshot AI",
       "reports": [
         {
           "seed": "4547331533",
@@ -41,6 +55,7 @@
     },
     {
       "model": "llama-3.1-405b-instruct",
+      "provider": "Meta",
       "reports": [
         {
           "seed": "75687",
@@ -54,6 +69,7 @@
     },
     {
       "model": "llama-4-maverick-17b-128e-instruct",
+      "provider": "Meta",
       "reports": [
         {
           "seed": "5306016632",
@@ -73,6 +89,7 @@
     },
     {
       "model": "llama-4-scout-17b-16e-instruct",
+      "provider": "Meta",
       "reports": [
         {
           "seed": "75687",
@@ -85,6 +102,7 @@
     },
     {
       "model": "llama3.2-3b",
+      "provider": "Meta",
       "reports": [
         {
           "seed": "75687",
@@ -97,6 +115,7 @@
     },
     {
       "model": "mistral-7b",
+      "provider": "Mistral AI",
       "reports": [
         {
           "seed": "75687",
@@ -109,6 +128,7 @@
     },
     {
       "model": "mixtral-8x22b-instruct-v0.1",
+      "provider": "Mistral AI",
       "reports": [
         {
           "seed": "4547331533",
@@ -121,6 +141,7 @@
     },
     {
       "model": "nemotron-3-nano-30b-a3b",
+      "provider": "NVIDIA",
       "reports": [
         {
           "seed": "75687",
@@ -133,6 +154,7 @@
     },
     {
       "model": "nvidia-nemotron-9b",
+      "provider": "NVIDIA",
       "reports": [
         {
           "seed": "75687",
@@ -145,6 +167,7 @@
     },
     {
       "model": "phi-2",
+      "provider": "Microsoft",
       "reports": [
         {
           "seed": "75687",
@@ -157,6 +180,7 @@
     },
     {
       "model": "phi4-mini",
+      "provider": "Microsoft",
       "reports": [
         {
           "seed": "5306016632",
@@ -169,6 +193,7 @@
     },
     {
       "model": "qwen3-4b",
+      "provider": "Alibaba",
       "reports": [
         {
           "seed": "75687",
@@ -181,6 +206,7 @@
     },
     {
       "model": "qwen3-coder-480b-a35b-instruct",
+      "provider": "Alibaba",
       "reports": [
         {
           "seed": "75687",
@@ -193,6 +219,7 @@
     },
     {
       "model": "sarvam-m",
+      "provider": "Sarvam AI",
       "reports": [
         {
           "seed": "4547331533",

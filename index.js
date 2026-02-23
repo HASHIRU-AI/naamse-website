@@ -87,6 +87,32 @@ function toggleMode(){
     
 }
 
+function switchLeaderboardView(view) {
+    const chartView = document.getElementById('leaderboard-view-chart');
+    const tableView = document.getElementById('leaderboard-view-table');
+    const chartBtn  = document.getElementById('view-toggle-chart');
+    const tableBtn  = document.getElementById('view-toggle-table');
+
+    const activeAdd    = ['tw-bg-white', 'dark:tw-bg-[#171717]', 'tw-text-gray-900', 'dark:tw-text-white', 'tw-shadow-sm'];
+    const activeRemove = ['tw-text-gray-600', 'dark:tw-text-gray-400'];
+
+    if (view === 'chart') {
+        chartView.style.display = '';
+        tableView.style.display = 'none';
+        activeAdd.forEach(c => chartBtn.classList.add(c));
+        activeRemove.forEach(c => chartBtn.classList.remove(c));
+        activeAdd.forEach(c => tableBtn.classList.remove(c));
+        activeRemove.forEach(c => tableBtn.classList.add(c));
+    } else {
+        chartView.style.display = 'none';
+        tableView.style.display = '';
+        activeAdd.forEach(c => tableBtn.classList.add(c));
+        activeRemove.forEach(c => tableBtn.classList.remove(c));
+        activeAdd.forEach(c => chartBtn.classList.remove(c));
+        activeRemove.forEach(c => chartBtn.classList.add(c));
+    }
+}
+
 function updateToggleModeBtn(){
 
     const toggleIcon = document.querySelector("#toggle-mode-icon")
