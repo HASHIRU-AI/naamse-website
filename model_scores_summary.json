@@ -1,16 +1,5 @@
 {
   "total_models": 16,
-  "providers": {
-    "Meta": "#0668E1",
-    "Microsoft": "#00A4EF",
-    "Mistral AI": "#FF7000",
-    "NVIDIA": "#76B900",
-    "Alibaba": "#FF6A00",
-    "OpenAI": "#10A37F",
-    "Z AI": "#6366F1",
-    "Moonshot AI": "#A855F7",
-    "Sarvam AI": "#EC4899"
-  },
   "models": [
     {
       "model": "glm4.7",

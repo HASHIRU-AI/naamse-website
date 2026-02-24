@@ -14,8 +14,17 @@ async function loadLeaderboardChart() {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
 
-        // Read provider colors from JSON
-        PROVIDER_COLORS = data.providers || {};
+        // Get unique providers
+        const providers = [...new Set(data.models.map(m => m.provider))];
+
+        // Create color scale using combined unique D3 palettes (25 distinct colors)
+        const colorScale = d3.scaleOrdinal([...new Set(d3.schemeCategory10.concat(d3.schemeAccent, d3.schemeDark2))]);
+
+        // Assign colors to providers
+        PROVIDER_COLORS = {};
+        providers.forEach((provider, index) => {
+            PROVIDER_COLORS[provider] = colorScale(index);
+        });
 
         const chartData = buildChartData(data);
 
@@ -340,7 +349,15 @@ function patchToggleForChart() {
                 fetch('./model_scores_summary.json')
                     .then(r => r.json())
                     .then(raw => {
-                        PROVIDER_COLORS = raw.providers || {};
+                        // Get unique providers
+                        const providers = [...new Set(raw.models.map(m => m.provider))];
+                        // Create color scale using combined unique D3 palettes (25 distinct colors)
+                        const colorScale = d3.scaleOrdinal([...new Set(d3.schemeCategory10.concat(d3.schemeAccent, d3.schemeDark2))]);
+                        // Assign colors to providers
+                        PROVIDER_COLORS = {};
+                        providers.forEach((provider, index) => {
+                            PROVIDER_COLORS[provider] = colorScale(index);
+                        });
                         drawChart(buildChartData(raw));
                     });
             }, 100);
