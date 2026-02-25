@@ -1,6 +1,19 @@
 {
-  "total_models": 20,
+  "total_models": 21,
   "models": [
+    {
+      "model": "qwen3.5-397b-a17b",
+      "provider": "Alibaba",
+      "reports": [
+        {
+          "seed": "6884",
+          "type": "consolidated",
+          "file": "assessment_report_qwen3.5-397b-a17b_seed6884.json",
+          "adversarial_score": 31,
+          "benign_score": 32.1
+        }
+      ]
+    },
     {
       "model": "gemini-2.5-flash",
       "provider": "Google",
