@@ -1,6 +1,32 @@
 {
-  "total_models": 16,
+  "total_models": 20,
   "models": [
+    {
+      "model": "gemini-2.5-flash",
+      "provider": "Google",
+      "reports": [
+        {
+          "seed": "4547331533",
+          "type": "consolidated",
+          "file": "assessment_report_gemini_2.5_flash_seed_4547331533.json",
+          "adversarial_score": 53.07,
+          "benign_score": 11.65
+        }
+      ]
+    },
+    {
+      "model": "gemini-3-flash",
+      "provider": "Google",
+      "reports": [
+        {
+          "seed": "4547331533",
+          "type": "consolidated",
+          "file": "assessment_report_gemini_3_flash_seed_4547331533.json",
+          "adversarial_score": 56.06,
+          "benign_score": 7.37
+        }
+      ]
+    },
     {
       "model": "glm4.7",
       "provider": "Z AI",
@@ -12,6 +38,19 @@
           "adversarial_score": 47.49,
           "benign_file": "final_report_benign_glm4.7_seed5306016632.json",
           "benign_score": 14.33
+        }
+      ]
+    },
+    {
+      "model": "glm5",
+      "provider": "Z AI",
+      "reports": [
+        {
+          "seed": "5306016632",
+          "type": "consolidated",
+          "file": "final_report_glm5_seed5306016632.json",
+          "adversarial_score": 50.39,
+          "benign_score": 18.36
         }
       ]
     },

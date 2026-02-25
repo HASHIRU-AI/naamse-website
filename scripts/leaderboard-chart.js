@@ -4,6 +4,25 @@
 
 let PROVIDER_COLORS = {};
 
+/**
+ * Build a provider → color map from the given provider list.
+ * Providers are sorted alphabetically so color assignments are stable
+ * regardless of the order they appear in the JSON data.
+ * Colors are drawn from a combined D3 palette with exact duplicates removed.
+ */
+function buildProviderColors(providers) {
+    const palette = [...new Set([
+        ...d3.schemeCategory10,
+        ...d3.schemeAccent,
+        ...d3.schemeDark2
+    ])];
+    const sorted = [...providers].sort();
+    const colorScale = d3.scaleOrdinal(palette).domain(sorted);
+    const colors = {};
+    sorted.forEach(p => { colors[p] = colorScale(p); });
+    return colors;
+}
+
 async function loadLeaderboardChart() {
     try {
         if (typeof d3 === 'undefined') {
@@ -14,17 +33,9 @@ async function loadLeaderboardChart() {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
 
-        // Get unique providers
+        // Get unique providers and assign stable colors
         const providers = [...new Set(data.models.map(m => m.provider))];
-
-        // Create color scale using combined unique D3 palettes (25 distinct colors)
-        const colorScale = d3.scaleOrdinal([...new Set(d3.schemeCategory10.concat(d3.schemeAccent, d3.schemeDark2))]);
-
-        // Assign colors to providers
-        PROVIDER_COLORS = {};
-        providers.forEach((provider, index) => {
-            PROVIDER_COLORS[provider] = colorScale(index);
-        });
+        PROVIDER_COLORS = buildProviderColors(providers);
 
         const chartData = buildChartData(data);
 
@@ -349,15 +360,8 @@ function patchToggleForChart() {
                 fetch('./model_scores_summary.json')
                     .then(r => r.json())
                     .then(raw => {
-                        // Get unique providers
                         const providers = [...new Set(raw.models.map(m => m.provider))];
-                        // Create color scale using combined unique D3 palettes (25 distinct colors)
-                        const colorScale = d3.scaleOrdinal([...new Set(d3.schemeCategory10.concat(d3.schemeAccent, d3.schemeDark2))]);
-                        // Assign colors to providers
-                        PROVIDER_COLORS = {};
-                        providers.forEach((provider, index) => {
-                            PROVIDER_COLORS[provider] = colorScale(index);
-                        });
+                        PROVIDER_COLORS = buildProviderColors(providers);
                         drawChart(buildChartData(raw));
                     });
             }, 100);
