@@ -1,6 +1,19 @@
 {
-  "total_models": 21,
+  "total_models": 22,
   "models": [
+    {
+      "model": "gpt-oss-20b",
+      "provider": "OpenAI",
+      "reports": [
+        {
+          "seed": "5306016632",
+          "type": "consolidated",
+          "file": "final_report_gptoss-20b_seed_5306016632.json",
+          "adversarial_score": 42.53,
+          "benign_score": 25.63
+        }
+      ]
+    },
     {
       "model": "qwen3.5-397b-a17b",
       "provider": "Alibaba",
@@ -8,7 +21,7 @@
         {
           "seed": "6884",
           "type": "consolidated",
-          "file": "assessment_report_qwen3.5-397b-a17b_seed6884.json",
+          "file": "final_report_qwen3.5-397b-a17b_seed6884.json",
           "adversarial_score": 31,
           "benign_score": 32.1
         }
