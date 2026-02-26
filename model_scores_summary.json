@@ -2,32 +2,6 @@
   "total_models": 22,
   "models": [
     {
-      "model": "gpt-oss-20b",
-      "provider": "OpenAI",
-      "reports": [
-        {
-          "seed": "5306016632",
-          "type": "consolidated",
-          "file": "final_report_gptoss-20b_seed_5306016632.json",
-          "adversarial_score": 42.53,
-          "benign_score": 25.63
-        }
-      ]
-    },
-    {
-      "model": "qwen3.5-397b-a17b",
-      "provider": "Alibaba",
-      "reports": [
-        {
-          "seed": "6884",
-          "type": "consolidated",
-          "file": "final_report_qwen3.5-397b-a17b_seed6884.json",
-          "adversarial_score": 31,
-          "benign_score": 32.1
-        }
-      ]
-    },
-    {
       "model": "gemini-2.5-flash",
       "provider": "Google",
       "reports": [
@@ -81,6 +55,19 @@
       ]
     },
     {
+      "model": "granite4",
+      "provider": "IBM",
+      "reports": [
+        {
+          "seed": "4547331533",
+          "type": "consolidated",
+          "file": "assessment_report_granite4_seed_4547331533.json",
+          "adversarial_score": 59.18,
+          "benign_score": 25.62
+        }
+      ]
+    },
+    {
       "model": "gpt-oss-120b",
       "provider": "OpenAI",
       "reports": [
@@ -91,6 +78,19 @@
           "adversarial_score": 56.73,
           "benign_file": "final_report_benign_gptoss-120b.json",
           "benign_score": 51.94
+        }
+      ]
+    },
+    {
+      "model": "gpt-oss-20b",
+      "provider": "OpenAI",
+      "reports": [
+        {
+          "seed": "5306016632",
+          "type": "consolidated",
+          "file": "final_report_gptoss-20b_seed_5306016632.json",
+          "adversarial_score": 42.53,
+          "benign_score": 25.63
         }
       ]
     },
@@ -268,6 +268,19 @@
           "file": "final_report_qwen3-coder-480b-a35b-instruct_seed_75687.json",
           "adversarial_score": 47.56,
           "benign_score": 11.08
+        }
+      ]
+    },
+    {
+      "model": "qwen3.5-397b-a17b",
+      "provider": "Alibaba",
+      "reports": [
+        {
+          "seed": "6884",
+          "type": "consolidated",
+          "file": "final_report_qwen3.5-397b-a17b_seed6884.json",
+          "adversarial_score": 31.0,
+          "benign_score": 32.15
         }
       ]
     },
